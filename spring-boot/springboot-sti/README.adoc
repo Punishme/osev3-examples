@@ -1,3 +1,9 @@
+== Create Docker strategy build in OSCP
+
+```
+oc new-build https://github.com/j1cken/osev3-examples.git --name=springboot-s2i --strategy='docker' --context-dir='spring-boot/springboot-sti' --allow-missing-images
+```
+
 == OpenShift S2I Builder for Spring Boot
 This Source-to-Image Builder let's you create projects targetting Spring Boot and built with:
 
