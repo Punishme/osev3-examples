@@ -4,6 +4,12 @@
 oc new-build https://github.com/j1cken/osev3-examples.git --name=springboot-s2i -n openshift --strategy='docker' --context-dir='spring-boot/springboot-sti' --docker-image="registry.access.redhat.com/rhel:latest"
 ```
 
+== Create Springboot Template in OSCP
+
+```
+oc create -n openshift -f springboot-sti-template.json
+```
+
 == OpenShift S2I Builder for Spring Boot
 This Source-to-Image Builder let's you create projects targetting Spring Boot and built with:
 
