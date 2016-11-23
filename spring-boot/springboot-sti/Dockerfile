@@ -1,5 +1,5 @@
 # springboot-sti
-FROM openshift/rhel
+FROM rhel7
 MAINTAINER Jorge Morales <jmorales@redhat.com>
 
 # Install build tools on top of base image
